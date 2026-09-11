@@ -76,7 +76,7 @@
     width: 22px; height: 22px; border-radius: 50%; cursor: pointer;
   }
   .stage {
-    height: calc(100% - 210px); display: grid; place-items: center; position: relative;
+    height: calc(100dvh - 210px); display: grid; place-items: center; position: relative;
   }
   .orb-wrap { position: relative; width: min(78vw, 340px); height: min(78vw, 340px); }
   .orb {
@@ -126,7 +126,7 @@
   .bar { height: 6px; background: #1b1224; border-radius: 99px; overflow: hidden; margin-top: 6px; flex: 1; margin-left: 10px; }
   .bar > i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, #8a4dff, #ff4d9a, #ffd24a); transition: width .35s; }
   .hud {
-    position: absolute; bottom: 0; left: 0; right: 0;
+    position: fixed; bottom: 0; left: 0; right: 0;
     padding: 12px 16px 22px;
     background: linear-gradient(180deg, transparent, #050308 28%);
   }
